@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'calibri', sans-serif;
+    text-decoration: none;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("RETROWAVE-OASIS-33331.png");
+    background-size: cover;
+    background-position: center;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+}
+.logo {
+    font-size: 32px;
+    color: white;
+}
+nav a {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-left: 40px;
+}
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scale(0);
+    transition: transfrom .5s;
+}
+nav a:hover::after {
+    transform-origin: left;
+    transform: scale(1);
+}
+nav .popup-login {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-left: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+nav .popup-login:hover {
+    background: white;
+    color: #162938;
+}
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+.wrapper .form-box h2 {
+    font-size: 32px;
+    color: white;
+    text-align: center;
+}
+.form-input {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+}
+.form-input label {
+    position: absolute;
+    top: 50px;
+    left: 5px;
+    transform: translate(-50%);
+    font-size: 16px;
+    font-weight: 500;
+    pointer-events: none;
+}
+.form-input input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;outline: none;
+}
